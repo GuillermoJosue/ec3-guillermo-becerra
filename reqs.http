@@ -1,8 +1,7 @@
-#@server = INSERTAR URL DE RENDER ACÁ
-#@api = {{server}}/api/ec3
-@api = http://localhost:8080
+@server = https://ec3-guillermo-becerra.onrender.com
+@api = {{server}}/api/ec3
 
-GET http://localhost:8080
+GET {{api}}
 
 ################ Categorias: ################
 ###
