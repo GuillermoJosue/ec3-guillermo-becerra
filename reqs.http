@@ -1,0 +1,26 @@
+#@server = INSERTAR URL DE RENDER ACÁ
+#@api = {{server}}/api/ec3
+@api = http://localhost:8080
+
+GET http://localhost:8080
+
+################ Categorias: ################
+###
+GET {{api}}/categorias
+###
+POST {{api}}/categorias
+Content-Type: application/json
+
+{"nombre": "Instrumentos de Cuerda3"}
+################ Instrumentos: ################
+###
+GET {{api}}/instrumentos
+###
+POST {{api}}/instrumentos
+Content-Type: application/json
+
+{"nombre": "Guitarra4", "categoria": "http://localhost/api/ec3/categorias/2"}
+###
+GET {{api}}/instrumentos/1/categoria
+###
+GET {{api}}/instrumentos?sort=nombre,desc
